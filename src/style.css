@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .align-element {
+    @apply mx-auto max-w-6xl px-8;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.activeStyle {
+}
+
+.activeStyle,
+nav a:hover {
+  background: #2a323c;
+  border-radius: 0.5rem;
+}
+
+/* Add these new rules */
+[data-theme="winter"] .activeStyle {
+  color: white;
+}
+
+[data-theme="winter"] nav a:hover {
+  color: white;
+}
