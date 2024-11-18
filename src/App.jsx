@@ -80,7 +80,7 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     action: registerAction,
   },
-]);
+]{ basename: "/comfy-store" });
 
 function App() {
   return (
